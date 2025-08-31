@@ -1,0 +1,18 @@
+Monthly mean total sunspot number 
+
+
+Data description:
+
+Error values:
+
+The standard error on the monthly mean values can be computed by:
+
+Contents:
+
+Line format [character position]:
+
+Contents:
+
+) which means you can :
+
+As long as you follow the license terms:

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="Time range: 1/1749 - last elapsed month (provisional values) Data description: Monthly mean total sunspot number obtained by taking a simple arithmetic mean of the daily total sunspot number over all days of each calendar month. Monthly means are available only since 1749 because the original observations compiled by Rudolph Wolf were too sparse before that year. (Only yearly means are available back to 1700) A value of -1 indicates that no number is available (missing value)." />
+<link rel="canonical" href="https://www.sidc.be/SILSO/infosnmtot" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="icon" href="/themes/custom/sidc_barrio/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://www.sidc.be/SILSO/infosnmtot" />
+
+    <title>Monthly mean total sunspot number | SIDC</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_LUiRlERtIi2WiJDihHxsxTp0pYSg_6sGu2Jefbo3lGY.css?delta=0&amp;language=en&amp;theme=sidc_barrio&amp;include=eJyNkeFuwyAMhF8oCY-EDLjEqsEIQ7u8_UgrTW2irfuDTr6PQ4edSNNWoVgHtZIYtw_u0PxqtYBHBje5IxRZHPCsbWPK8exTgoj2wp3C2cwS8DxVpoA2w-3F2vNRTeEeKS8O_DVW6TlYLyx1cZ04_I5LDfgJSlAf7J9QgRBGzQ9Uw69mgSnmhLn9B35tMTRDUXIs_mq8VJz2Y6hUJI9AXY5fNs_job6n9JR1YtikNxtIvdywbmZcG96kFPzbch8RPuQ357BR7QXrhXQ1P-rZwN5Xajjppg2TcaD4DXeT5r0" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_-kR61drgyW92hTBTefwQkhxsrb9UPL-1sgrnsywWyjQ.css?delta=1&amp;language=en&amp;theme=sidc_barrio&amp;include=eJyNkeFuwyAMhF8oCY-EDLjEqsEIQ7u8_UgrTW2irfuDTr6PQ4edSNNWoVgHtZIYtw_u0PxqtYBHBje5IxRZHPCsbWPK8exTgoj2wp3C2cwS8DxVpoA2w-3F2vNRTeEeKS8O_DVW6TlYLyx1cZ04_I5LDfgJSlAf7J9QgRBGzQ9Uw69mgSnmhLn9B35tMTRDUXIs_mq8VJz2Y6hUJI9AXY5fNs_job6n9JR1YtikNxtIvdywbmZcG96kFPzbch8RPuQ357BR7QXrhXQ1P-rZwN5Xajjppg2TcaD4DXeT5r0" />
+<link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.0/spacelab/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_P8-UFOLun6GzDusy4kDbMiziaOfWWIIGD9gZxNv_xtI.css?delta=3&amp;language=en&amp;theme=sidc_barrio&amp;include=eJyNkeFuwyAMhF8oCY-EDLjEqsEIQ7u8_UgrTW2irfuDTr6PQ4edSNNWoVgHtZIYtw_u0PxqtYBHBje5IxRZHPCsbWPK8exTgoj2wp3C2cwS8DxVpoA2w-3F2vNRTeEeKS8O_DVW6TlYLyx1cZ04_I5LDfgJSlAf7J9QgRBGzQ9Uw69mgSnmhLn9B35tMTRDUXIs_mq8VJz2Y6hUJI9AXY5fNs_job6n9JR1YtikNxtIvdywbmZcG96kFPzbch8RPuQ357BR7QXrhXQ1P-rZwN5Xajjppg2TcaD4DXeT5r0" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/spacelab/bootstrap.min.css" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/prismjs@1.25.0/themes/prism-okaidia.css" />
+<link rel="stylesheet" media="all" href="//cdn.jsdelivr.net/npm/highlight.js@11.5.1/styles/github-dark.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_XHbZCwIXS-RUPmpE4lTrqHXYwQt7cj3o-B8blz290KY.css?delta=9&amp;language=en&amp;theme=sidc_barrio&amp;include=eJyNkeFuwyAMhF8oCY-EDLjEqsEIQ7u8_UgrTW2irfuDTr6PQ4edSNNWoVgHtZIYtw_u0PxqtYBHBje5IxRZHPCsbWPK8exTgoj2wp3C2cwS8DxVpoA2w-3F2vNRTeEeKS8O_DVW6TlYLyx1cZ04_I5LDfgJSlAf7J9QgRBGzQ9Uw69mgSnmhLn9B35tMTRDUXIs_mq8VJz2Y6hUJI9AXY5fNs_job6n9JR1YtikNxtIvdywbmZcG96kFPzbch8RPuQ357BR7QXrhXQ1P-rZwN5Xajjppg2TcaD4DXeT5r0" />
+<link rel="stylesheet" media="print" href="/sites/default/files/css/css_etBCMHVN_Quk_7irRBtfonc2P389AenRsq5xYkHB4fE.css?delta=10&amp;language=en&amp;theme=sidc_barrio&amp;include=eJyNkeFuwyAMhF8oCY-EDLjEqsEIQ7u8_UgrTW2irfuDTr6PQ4edSNNWoVgHtZIYtw_u0PxqtYBHBje5IxRZHPCsbWPK8exTgoj2wp3C2cwS8DxVpoA2w-3F2vNRTeEeKS8O_DVW6TlYLyx1cZ04_I5LDfgJSlAf7J9QgRBGzQ9Uw69mgSnmhLn9B35tMTRDUXIs_mq8VJz2Y6hUJI9AXY5fNs_job6n9JR1YtikNxtIvdywbmZcG96kFPzbch8RPuQ357BR7QXrhXQ1P-rZwN5Xajjppg2TcaD4DXeT5r0" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_32xZwGtXSzLCa9hd6o1NMSIPEkJo9H1lihEjwQjN3uc.css?delta=11&amp;language=en&amp;theme=sidc_barrio&amp;include=eJyNkeFuwyAMhF8oCY-EDLjEqsEIQ7u8_UgrTW2irfuDTr6PQ4edSNNWoVgHtZIYtw_u0PxqtYBHBje5IxRZHPCsbWPK8exTgoj2wp3C2cwS8DxVpoA2w-3F2vNRTeEeKS8O_DVW6TlYLyx1cZ04_I5LDfgJSlAf7J9QgRBGzQ9Uw69mgSnmhLn9B35tMTRDUXIs_mq8VJz2Y6hUJI9AXY5fNs_job6n9JR1YtikNxtIvdywbmZcG96kFPzbch8RPuQ357BR7QXrhXQ1P-rZwN5Xajjppg2TcaD4DXeT5r0" />
+
+    
+  </head>
+  <body class="layout-one-sidebar layout-sidebar-first page-node-836 path-node node--type-page">
+    <a href="#main-content" class="visually-hidden-focusable">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div id="page-wrapper">
+  <div id="page">
+    <header id="header" class="header" role="banner" aria-label="Site header">
+                        <nav class="navbar navbar-light bg-primary" id="navbar-top">
+                    <div class="container">
+                        
+                <section class="row region region-top-header">
+    <div id="block-royalobservatoryofbelgium" class="block-content-basic block block-block-content block-block-content2ad5e872-95c5-4e78-9da0-b3f409d99f6a">
+  <div id="collapsiblock-wrapper-royalobservatoryofbelgium" class="collapsiblockTitle" data-collapsiblock-action="2">
+    </div>
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="container-fluid" data-bootstrap-contains="containers" style="padding-left:0em;">
+<div class="container" style="padding-left:0em;">
+<div class="row" style="padding-left:0em;">
+<div class="col-12" style="padding-left:0.5em;"><a href="https://www.astro.oma.be/en/"><img src="/logo/ROB34x24.png" style="margin-left: 0.5em; margin-right: 1em;"><span style="color:#a2d2f6;">Royal Observatory</span> <span style="color:#e5e5e5;"><em>of</em> Belgium</span></a></div>
+</div>
+</div>
+</div>
+<script src="//cdn.public.n1ed.com/N1D8DFLT/widgets.js"></script>
+</div>
+      
+    </div>
+  </div>
+
+  </section>
+
+                                  </div>
+                    </nav>
+                <nav class="navbar navbar-light bg-light navbar-expand-sm" id="navbar-main">
+                    <div class="container">
+                        <section class="region region-header">
+          <a href="/" title="Home" rel="home" class="navbar-brand">
+              <img src="/themes/custom/sidc_barrio/SIDClogo.svg" alt="Home" class="img-fluid d-inline-block align-top" />
+            
+    </a>
+    
+  </section>
+
+                          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+                  <div id="block-mainnavigation" class="block block-superfish block-superfishmain">
+  <div id="collapsiblock-wrapper-mainnavigation" class="collapsiblockTitle" data-collapsiblock-action="2">
+    </div>
+      <div class="content">
+      
+<ul id="superfish-main" class="menu sf-menu sf-main sf-horizontal sf-style-none" role="menu" aria-label="Menu">
+  
+
+  
+  <li id="main-standardfront-page" class="sf-depth-1 sf-no-children" role="none">
+              <a href="/" class="sf-depth-1" role="menuitem">Home</a>
+                      </li>
+
+
+            
+  <li id="main-menu-link-content35585f4d-3125-497f-9cf6-8708bdbdfb51" class="sf-depth-1 menuparent  menuparent" role="none">
+              <a href="/#observations" title="Ground and Space based observations" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Observations</a>
+                  <ul role="menu">      
+
+            
+  <li id="main-menu-link-content524d7ef4-e255-410b-a934-77a25f02ce8e" class="sf-depth-2 menuparent  menuparent" role="none">
+              <a href="/observations/space-based-imaging" title="Space Based Imaging" class="sf-depth-2 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Space Based Imaging</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-menu-link-content67a1d188-0754-42d3-ae8a-1453ea09c70a" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/EIT/" title="Extreme ultraviolet Imaging Telescope" class="sf-depth-3" role="menuitem">EIT</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentdee28d79-ada7-4689-ae76-9762740a3bc8" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/EUI" title="Extreme-UV Imaging Telescope" class="sf-depth-3" role="menuitem">EUI</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content995e6a86-6321-41cf-ad48-4184c61896dd" class="sf-depth-3 sf-no-children" role="none">
+              <a href="http://wissdom.oma.be/" title="Solar Dynamics Observatory" class="sf-depth-3 sf-external" role="menuitem">SDO</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content794bdbea-e80d-4db0-b462-9c60158b92b2" class="sf-depth-3 sf-no-children" role="none">
+              <a href="http://sol.oma.be/SECCHI/" title="Sun Earth Connection Coronal and Heliospheric Investigation" class="sf-depth-3 sf-external" role="menuitem">SECCHI</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentbe70bef4-f0bd-4c33-97bd-95f3fd9c9084" class="sf-depth-3 sf-no-children" role="none">
+              <a href="https://proba2.sidc.be/about/SWAP" title="Sun Watcher using Active Pixel System" class="sf-depth-3 sf-external" role="menuitem">SWAP</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-menu-link-contentd2c5403b-24d7-42f4-a8eb-20baa9af0716" class="sf-depth-2 menuparent  menuparent" role="none">
+              <a href="/observations/ground-based-imaging" title="Ground Based Imaging" class="sf-depth-2 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Ground Based Imaging</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-menu-link-content88a07839-45c2-48bd-ad2b-6827c7dd6f19" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/uset" title="Uccle Solar Equatorial Table" class="sf-depth-3" role="menuitem">USET</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-menu-link-content03b6272a-6dba-4707-b5eb-7773feaa9f5c" class="sf-depth-2 menuparent  menuparent" role="none">
+              <a href="/observations/ground-based-radio" title="Ground Based Radio" class="sf-depth-2 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Ground Based Radio</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-menu-link-contente17a002a-f3c0-4c17-88a8-467226754e6c" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/humain/" title="Humain Solar Radioastronomy" class="sf-depth-3" role="menuitem">Humain</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-menu-link-content6dbbf4d7-d585-4ff5-9e32-c74358c813f5" class="sf-depth-2 menuparent  menuparent" role="none">
+              <a href="/observations/space-based-timelines" title="Space Based Timelines" class="sf-depth-2 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Space Based Timelines</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-menu-link-content49900af7-d788-4a2e-9cee-a805ebf66249" class="sf-depth-3 sf-no-children" role="none">
+              <a href="https://proba2.sidc.be/about/LYRA" title="Large Yield Radiometer" class="sf-depth-3 sf-external" role="menuitem">LYRA</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentd367525d-24c8-4372-b251-8d20d599aa88" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/observations/space-based-timelines/tsi" title="Total Solar Irradiance" class="sf-depth-3" role="menuitem">TSI</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+  
+  <li id="main-menu-link-content9612fe38-e148-4056-9a17-3e4a168f72dc" class="sf-depth-2 sf-no-children  menuparent" role="none">
+              <a href="/silso" title="WDC Sunspot Index" class="sf-depth-2" role="menuitem">WDC Sunspot Index</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-menu-link-contentdb21bded-7c6a-49df-93e9-336b18d50404" class="sf-depth-1 menuparent  menuparent" role="none">
+              <a href="/#services" title="Space Weather Services" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Services</a>
+                  <ul role="menu">      
+
+            
+  <li id="main-menu-link-content5ba4eaf0-8387-4995-868b-8c7de50618ec" class="sf-depth-2 menuparent  menuparent" role="none">
+              <a href="/services/bulletins-forecasts" title="Bulletins and Forecasts issued by SIDC" class="sf-depth-2 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Bulletins &amp; Forecast</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-menu-link-content898cd7d5-9fdc-4c20-a77a-828faf65c560" class="sf-depth-3 sf-no-children" role="none">
+              <a href="https://www.sidc.be/silso/sunspotbulletin" title="SILSO sunspot Bulletins" class="sf-depth-3 sf-external" role="menuitem">Monthly &amp; Quarterly Bulletins</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentcf6dcd07-a1f8-481a-8c22-2c54911daaf9" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/spaceweatherservices/managed/services/archive/product/meu/latest" title="URSIgram" class="sf-depth-3" role="menuitem">URSIgram</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content15a000de-da9c-4806-af3b-414197356959" class="sf-depth-3 sf-no-children" role="none">
+              <a href="https://www.sidc.be/spaceweatherservices/managed/services/archive/product/bul/" title="Weekly Bulletin" class="sf-depth-3 sf-external" role="menuitem">Weekly</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentcbdb72be-1960-40d3-a36e-8b7fe48719e0" class="sf-depth-3 sf-no-children" role="none">
+              <a href="https://www.sidc.be/spaceweatherservices/managed/services/applications/archive/" title="Archive of our products" class="sf-depth-3 sf-external" role="menuitem">Archive</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-menu-link-contentdb0ed43a-2dbf-4928-81c1-89e75d56e294" class="sf-depth-2 menuparent  menuparent" role="none">
+              <a href="/services/real-time-alerts" title="Real-Time Space Weather Alerts" class="sf-depth-2 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Real-Time Alerts</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-menu-link-content76d613a2-f0ff-4423-8ee4-88ece3d32076" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/spaceweatherservices/managed/services/archive/product/cactus" title="Halo CMEs by Cactus" class="sf-depth-3" role="menuitem">Halo CMEs</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content5a593faf-250b-45ce-ba34-02bf02b9ed2f" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/spaceweatherservices/managed/services/archive/product/flaremail" title="Large Flare warning by mail" class="sf-depth-3" role="menuitem">Large Flare</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content790882c1-18ef-443a-a398-314a2f60d2e2" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/spaceweatherservices/managed/services/archive/product/quieta" title="Notification of All Quiet Conditions" class="sf-depth-3" role="menuitem">All Quiet Alert</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content44ec0cc2-0bdc-48af-b110-2b8d207dc1d5" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/spaceweatherservices/managed/services/archive/product/presto/" title="Presto notifications" class="sf-depth-3" role="menuitem">Presto</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+  
+  <li id="main-menu-link-content45922c9b-7c9c-4225-a359-e206cff04843" class="sf-depth-2 sf-no-children  menuparent" role="none">
+              <a href="/spaceweatherservices/applications/solarmap/" title="Solar Activity Overview Map" class="sf-depth-2" role="menuitem">Solar Map</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content1f8f78f7-df14-4e23-9d4c-ed4307a88156" class="sf-depth-2 sf-no-children  menuparent" role="none">
+              <a href="/SVO" title="SOLARNET Virtual Observatory" class="sf-depth-2" role="menuitem">SOLARNET Virt. Obs.</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentb4c1485c-a017-4b7c-81a6-f715ce163c3e" class="sf-depth-2 sf-no-children  menuparent" role="none">
+              <a href="/registration/registration_main.php" title="All Our Products" class="sf-depth-2" role="menuitem">All Our Products</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentbeed5933-0c16-4e84-af23-572b5348ebf9" class="sf-depth-2 sf-no-children  menuparent" role="none">
+              <a href="/registration/registration_step1.php" title="Register" class="sf-depth-2" role="menuitem">Register</a>
+                      </li>
+
+
+            
+  <li id="main-menu-link-contentce4d0ca9-0f59-4323-9fc2-b0cb3377988b" class="sf-depth-2 menuparent  menuparent" role="none">
+              <a href="/#eventchains" title="Our new event chains" class="sf-depth-2 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Event chains</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-menu-link-content605dc8d6-0aef-4c4c-a758-ddfddb70673c" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/services/event-chains/sunspots" class="sf-depth-3" role="menuitem">Sunspot Groups</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentb5fcc021-8d43-4968-b686-fa69772fdf41" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/services/event-chains/flares" class="sf-depth-3" role="menuitem">Flares</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content1ee4ced1-7daa-4371-a54f-65809e1a7ddf" class="sf-depth-3 sf-no-children" role="none">
+              <a href="/services/event-chains/coronal-holes" class="sf-depth-3" role="menuitem">Coronal holes</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentc7700ff0-aee3-4e45-a324-0c0f305127e1" class="sf-depth-3 sf-no-children" role="none">
+              <a href="https://www.sidc.be/spaceweatherservices/applications/eventchains/cme.php" class="sf-depth-3 sf-external" role="menuitem">Coronal Mass Ejections</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+      </ul>              </li>
+
+
+  
+  <li id="main-menu-link-contente312cc91-2bc2-4737-9690-96c29f6c8c09" class="sf-depth-1 sf-no-children  menuparent" role="none">
+              <a href="/#research" title="Scientific Research" class="sf-depth-1" role="menuitem">Research</a>
+                      </li>
+
+
+            
+  <li id="main-menu-link-content70cb80f6-a2e5-4810-9e8c-99abcdf3f453" class="sf-depth-1 menuparent  menuparent" role="none">
+              <a href="/activities" title="Outreach Activities" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Activities</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-menu-link-content8a760b11-75a5-4a4b-8a6e-95f5caf93ebd" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/news" title="Latest SIDC news" class="sf-depth-2" role="menuitem">News</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentd6f351e6-fbe8-44fe-8a01-a440b8ea1541" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/project" title="SIDC Projects" class="sf-depth-2" role="menuitem">Projects</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contented5c69b0-0955-4b1e-ad81-c0d94dee7fcd" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/activities/ground-observations" title="Ground Observations by the SIDC" class="sf-depth-2" role="menuitem">Ground Observations</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentc9a7425f-0b94-4d41-bc8d-be9f1eade897" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/activities/space-instruments" title="Space Instruments by the SIDC" class="sf-depth-2" role="menuitem">Space Instruments</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contentb834667e-8e30-4b7c-af08-5abfc98fd53e" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/activities/space-weather" title="Space Weather by the SIDC" class="sf-depth-2" role="menuitem">Space Weather</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content0a9940dd-655c-4e0f-87ec-ef2a32a11ccf" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/activities/modeling" title="Modeling by the SIDC" class="sf-depth-2" role="menuitem">Modeling</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content44394c73-448d-4198-9261-532a0f4b039d" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/activities/supporting-research" title="Research Training by the SIDC" class="sf-depth-2" role="menuitem">Supporting Research</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-content493b8251-973a-4352-8839-9ad812329f33" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/activities/data-processing" title="Data Processing and Distribution" class="sf-depth-2" role="menuitem">Data Processing</a>
+                      </li>
+
+
+  
+  <li id="main-menu-link-contenta536936e-7d5d-4d78-8976-1ddc15a47bcf" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/activities/demelab" title="awesome laboratory" class="sf-depth-2" role="menuitem">DeMeLab</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+</ul>
+
+    </div>
+  </div>
+
+
+                	          </div>
+                                            </div>
+                  </nav>
+    </header>
+          <div class="highlighted">
+        <aside class="container section clearfix" role="complementary">
+            <div data-drupal-messages-fallback class="hidden"></div>
+
+
+        </aside>
+      </div>
+            <div id="main-wrapper" class="layout-main-wrapper clearfix">
+              <div id="main" class="container">
+          
+          <div class="row row-offcanvas row-offcanvas-left clearfix">
+              <main class="main-content col" id="content" role="main">
+                <section class="section">
+                  <a id="main-content" tabindex="-1"></a>
+                    <div id="block-sidc-barrio-page-title" class="block block-core block-page-title-block">
+  
+    
+      <div class="content">
+      
+  <h1 class="title"><span class="field field--name-title field--type-string field--label-hidden">Monthly mean total sunspot number </span>
+</h1>
+
+
+    </div>
+  </div>
+<div id="block-sidc-barrio-content" class="block block-system block-system-main-block">
+  <div id="collapsiblock-wrapper-sidc_barrio_content" class="collapsiblockTitle" data-collapsiblock-action="2">
+    </div>
+      <div class="content">
+      
+
+<article data-history-node-id="836" class="node node--type-page node--view-mode-full clearfix">
+  <header>
+    
+        
+      </header>
+  <div class="node__content clearfix">
+      <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      <div class="block block-layout-builder block-field-blocknodepagebody">
+  <div id="collapsiblock-wrapper-field-blocknodepagebody-00d1eff8-fdcc-4bcf-86f7-78ce6b4c15b8" class="collapsiblockTitle" data-collapsiblock-action="2">
+    </div>
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Time range: 1/1749 - last elapsed month (provisional values)</p>
+<p>Data description:<br />
+Monthly mean total sunspot number obtained by taking a simple arithmetic mean of the daily total sunspot number over all days of each calendar month. Monthly means are available only since 1749 because the original observations compiled by Rudolph Wolf were too sparse before that year. (Only yearly means are available back to 1700)<br />
+A value of -1 indicates that no number is available (missing value).</p>
+<p>Error values:<br />
+The monthly standard deviation of individual data is derived from the daily values by:    sigma(m)=sqrt(SUM(N(d)*sigma(d)^2)/SUM(N(d)))<br />
+where sigma(d) is the standard deviation for a single day and N(d) is the<br />
+number of observations for that day.<br />
+The standard error on the monthly mean values can be computed by:<br />
+sigma/sqrt(N) where sigma is the listed standard deviation and N the total number of observations in the month.</p>
+<p>NB: February 1824 does not contain any daily value. As it is the only month without data after 1749, the monthly mean value was interpolated by R. Wolf between the adjacent months.<br />
+-------------------------------------------------------------------------------<br />
+TXT<br />
+-------------------------------------------------------------------------------<br />
+Filename: SN_m_tot_V2.0.txt<br />
+Format: plain ASCII text</p>
+<p>Contents:<br />
+Column 1-2: Gregorian calendar date<br />
+ - Year<br />
+ - Month<br />
+Column 3: Date in fraction of year for the middle of the corresponding month<br />
+Column 4: Monthly mean total sunspot number.<br />
+Column 5: Monthly mean standard deviation of the input sunspot numbers from individual stations.<br />
+Column 6: Number of observations used to compute the monthly mean total sunspot number.<br />
+Column 7: Definitive/provisional marker. A blank indicates that the value is definitive. A &#039;*&#039; symbol indicates that the monthly value is still provisional and is subject to a possible revision (Usually the last 3 to 6 months)</p>
+<p>Line format [character position]:<br />
+ - [1-4]   Year<br />
+ - [6-7]   Month<br />
+ - [9-16]  Decimal date<br />
+ - [19-23] Monthly total sunspot number<br />
+ - [25-29] Standard deviation<br />
+ - [32-35] Number of observations<br />
+ - [37]    Definitive/provisional indicator</p>
+<p>-------------------------------------------------------------------------------<br />
+CSV<br />
+-------------------------------------------------------------------------------<br />
+Filename: SN_m_tot_V2.0.csv<br />
+Format: Comma Separated values (adapted for import in spreadsheets)<br />
+        The separator is the semicolon &#039;;&#039;.</p>
+<p>Contents:<br />
+Column 1-2: Gregorian calendar date<br />
+ - Year<br />
+ - Month<br />
+Column 3: Date in fraction of year.<br />
+Column 4: Monthly mean total sunspot number.<br />
+Column 5: Monthly mean standard deviation of the input sunspot numbers.<br />
+Column 6: Number of observations used to compute the monthly mean total sunspot number.<br />
+Column 7: Definitive/provisional marker. &#039;1&#039; indicates that the value is definitive. &#039;0&#039; indicates that the value is still provisional.</p>
+<p>-------------------------------------------------------------------------------<br />
+LICENSE<br />
+-------------------------------------------------------------------------------<br />
+SILSO data is under CC BY-NC4.0 license (<a href="https://goo.gl/PXrLYd">https://goo.gl/PXrLYd</a>) which means you can :</p>
+<p>Share — copy and redistribute the material in any medium or format<br />
+Adapt — remix, transform, and build upon the material</p>
+<p>As long as you follow the license terms:</p>
+<p>Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.<br />
+NonCommercial — You may not use the material for commercial purposes.<br />
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</p>
+</div>
+      
+    </div>
+  </div>
+<div class="block block-layout-builder block-extra-field-blocknodepagelinks">
+  <div id="collapsiblock-wrapper-extra-field-blocknodepagelinks-cb2b1b9b-5fc4-436e-a3c3-174965b1db3f" class="collapsiblockTitle" data-collapsiblock-action="2">
+    </div>
+      <div class="content">
+      
+
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+  </div>
+</article>
+
+    </div>
+  </div>
+
+
+                </section>
+              </main>
+                          <div class="sidebar_first sidebar col-md-3 order-first" id="sidebar_first">
+                <aside class="section" role="complementary">
+                    <div id="block-sisologo" class="block-content-basic block block-block-content block-block-contentcb08d79c-0df3-425c-b6b5-b105f4af3e1e">
+  
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div style="text-align: center;">
+<a href="/SILSO/home">
+    <img src="/SILSO/IMAGES/logos/LOGO-DEF-H75px.png">
+</a><br>
+Sunspot Index and Long-term Solar Observations
+</div></div>
+      
+    </div>
+  </div>
+<div id="block-mainnavigationsilso" class="block block-superfish block-superfishmain-navigation-silso">
+  
+    
+      <div class="content">
+      
+<ul id="superfish-main-navigation-silso" class="menu sf-menu sf-main-navigation-silso sf-vertical sf-style-white" role="menu" aria-label="Menu">
+  
+
+  
+  <li id="main-navigation-silso-menu-link-content6bd2c4f8-6f86-4832-ac7b-e909dbde1563" class="sf-depth-1 sf-no-children" role="none">
+              <a href="/SILSO/home" title="SILSO Home page" class="sf-depth-1" role="menuitem">Home</a>
+                      </li>
+
+
+            
+  <li id="main-navigation-silso-menu-link-content8aa449f7-8395-475b-9981-c305efa9f533" class="sf-depth-1 menuparent  menuparent" role="none">
+              <a href="/SILSO/datafiles" title="SILSO Data Files" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Data</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-navigation-silso-menu-link-content9fce13b9-458b-4034-af5e-eb26f38650c6" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/datafiles" title="Sunspot Number Data Files" class="sf-depth-2" role="menuitem">Sunspot Number</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content27b9cefd-67e3-490c-b4bb-91f5893792fa" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/groupnumberv3" title="Sunspot Group Number" class="sf-depth-2" role="menuitem">Group Number</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content1e131f03-10e1-40c8-999f-c5b0264c92fa" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/versionarchive" title="Past Versions of Data Files" class="sf-depth-2" role="menuitem">Past versions</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content722e7eac-ea84-4650-b9ab-fc748bb0443a" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/extheminum" title="SILSO Extended Hemispheric Number" class="sf-depth-2" role="menuitem">Extended hemispheric number</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content34366ad1-3d2b-4d7d-81dd-8fae923339a6" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/carrington" title="Carrington Raw Data" class="sf-depth-2" role="menuitem">Raw Data - Carrington</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content1d220823-9ad1-48e5-a9b2-e478ab601b98" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/schwolftransition" title="Schwabe-Wolf Transition Sunspot Number" class="sf-depth-2" role="menuitem">Schwabe-Wolf transition SN</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-contentcbae6c32-88b7-43f4-962e-6e7f36ddd4e6" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/wolf-wolfer-transition-sn" title="Wolf Wolfer transition sunspot number" class="sf-depth-2" role="menuitem">Wolf Wolfer transition SN</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content001152ae-7903-41b3-8b9f-fb07427e9b25" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/locarno" class="sf-depth-2" role="menuitem">Specola Solare Ticinese</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-navigation-silso-menu-link-contente91464a2-f4a4-40e3-9187-b876f63dadf3" class="sf-depth-1 menuparent  menuparent" role="none">
+              <a href="/SILSO/ssngraphics" title="SILSO Sunspot Number Graphics" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Products</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-navigation-silso-menu-link-content6be854ed-8529-4330-a9a4-ee9cdd933e89" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/ssngraphics" title="SILSO Graphics" class="sf-depth-2" role="menuitem">Graphics</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content86324b2f-f231-43e2-8600-7a73349c6bd4" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/forecasts" title="Solar Cycle Forecasts" class="sf-depth-2" role="menuitem">Cycle forecasts</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content3ff27efe-4c13-458c-a8cd-3c23ed6232cb" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/cyclesminmax" title="Cycles Minimum and Maximum" class="sf-depth-2" role="menuitem">Cycles Min/Max</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content6ead4e75-2646-464e-81f5-31fb9712ef4c" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/sunspotbulletin" title="Sunspot Bulletin" class="sf-depth-2" role="menuitem">Sunspot Bulletin</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content47f194ef-33f8-47cf-aa21-900dc65dd579" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/registration/registration_step1.php" title="Subscribe to SIDC products" class="sf-depth-2" role="menuitem">Subscribe</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-navigation-silso-menu-link-content0d4697e4-5725-40ae-98a4-ae96a6e97c10" class="sf-depth-1 menuparent  menuparent" role="none">
+              <a href="/SILSO/spotless" title="SILSO Spotless Days" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Analyses</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-navigation-silso-menu-link-contentd5d5fe49-715a-414d-8699-aea9ef2be6c9" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/cyclesmm" title="Durations of Solar Cycles" class="sf-depth-2" role="menuitem">Cycles durations</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-contentda999456-5198-426d-af4a-cdc6333053f9" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/spotless" title="SILSO Spotless Days" class="sf-depth-2" role="menuitem">Spotless days</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-navigation-silso-menu-link-content839797d5-b64f-4fdf-a5d5-7ec3f4eabe79" class="sf-depth-1 menuparent  menuparent" role="none">
+              <a href="/SILSO/faq-page" title="SILSO Frequently Asked Questions and News" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">FAQ &amp; News</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-navigation-silso-menu-link-contentc31745ba-a7ed-42f0-b6d0-db5dd8888789" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/SILSO/faq-page" title="Sunspot Number Frequently Asked Questions" class="sf-depth-2" role="menuitem">SSN FAQ</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-contentcdb7f93e-a8e5-40f6-b6a7-025ba697a022" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/taxonomy/term/26" title="Archive of News Articles" class="sf-depth-2" role="menuitem">News-Archive</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+            
+  <li id="main-navigation-silso-menu-link-contentd7d9778a-4a20-4c73-86c2-85d862b41b4f" class="sf-depth-1 menuparent  menuparent" role="none">
+              <a href="/WOLF/" title="Observers of Sunspots" class="sf-depth-1 menuparent" role="menuitem" aria-haspopup="true" aria-expanded="false">Observers</a>
+                  <ul role="menu">      
+
+  
+  <li id="main-navigation-silso-menu-link-contentb6f7738a-4c50-4c9e-8412-ff17a9633286" class="sf-depth-2 sf-no-children" role="none">
+              <a href="/WOLF/" title="Enter your Sunspot observations" class="sf-depth-2" role="menuitem">Enter your observations</a>
+                      </li>
+
+
+      </ul>              </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content943142e7-5819-444a-832b-b8e988f63eb1" class="sf-depth-1 sf-no-children  menuparent" role="none">
+              <a href="/SILSO/Contact" title="SILSO Contact Information" class="sf-depth-1" role="menuitem">Contact</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-content94fb6ef4-273b-458f-9f98-d4292e3d9de3" class="sf-depth-1 sf-no-children  menuparent" role="none">
+              <a href="/SILSO/legal" title="Legal notices" class="sf-depth-1" role="menuitem">Legal notices</a>
+                      </li>
+
+
+  
+  <li id="main-navigation-silso-menu-link-contentced45211-ed20-416e-9673-8fbeef378632" class="sf-depth-1 sf-no-children  menuparent" role="none">
+              <a href="/SILSO/about" title="About SILSO" class="sf-depth-1" role="menuitem">About</a>
+                      </li>
+
+
+</ul>
+
+    </div>
+  </div>
+
+
+                </aside>
+              </div>
+                                  </div>
+        </div>
+    </div>
+        <footer class="site-footer">
+              <div class="container">
+                      <div class="site-footer__top clearfix">
+                <section class="row region region-footer-first">
+    <div id="block-legalnotices" class="block-content-basic block block-block-content block-block-content8d965736-9cc9-428b-a45e-74f319cdfe68">
+  
+      <h2>Legal Notices</h2>
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><ul>
+	<li><a href="https://www.astro.oma.be/en/information/privacy-statement/">Privacy Statement</a></li>
+	<li><a href="https://www.astro.oma.be/en/information/cookie-declaration/">Cookie Declaration</a></li>
+	<li><a href="https://www.astro.oma.be/en/information/terms-use/">Terms of Use</a></li>
+	<li><a href="https://www.astro.oma.be/en/information/data-policy/">Data Policy</a></li>
+	<li><a href="https://www.astro.oma.be/en/information/disclaimer/">Disclaimer</a></li>
+</ul>
+</div>
+      
+    </div>
+  </div>
+<nav role="navigation" aria-labelledby="block-useraccountmenu-menu" id="block-useraccountmenu" class="block block-menu navigation menu--account">
+            
+  <h2 class="visually-hidden" id="block-useraccountmenu-menu">User account menu</h2>
+  
+
+        
+              <ul class="clearfix nav flex-row" data-component-id="bootstrap_barrio:menu_columns">
+                    <li class="nav-item">
+                <a href="/user/login" class="nav-link nav-link--user-login" data-drupal-link-system-path="user/login">Log in</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+  </section>
+
+                <section class="row region region-footer-second">
+    <div id="block-information" class="block-content-basic block block-block-content block-block-content3f638905-9145-43af-8117-abb82302f07e">
+  
+      <h2>Information</h2>
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="row"><div class="col-12"><ul><li><a href="https://www.astro.oma.be/en/information/getting-to-the-observatory/">Getting to the Observatory</a></li><li><a href="https://www.astro.oma.be/en/information/jobs/">Jobs at ROB/SIDC</a></li><li>SIDC is a department of <a href="https://www.astro.oma.be/en/">ROB</a></li><li>SIDC is involved in the <a href="https://www.stce.be/">STCE</a></li><li>SIDC <a href="/project">Projects</a></li></ul></div></div></div>
+      
+    </div>
+  </div>
+
+  </section>
+
+                <section class="row region region-footer-third">
+    <div id="block-recentezooi" class="block-content-basic block block-block-content block-block-contentdb3a6659-3ee2-49da-b3b4-ba58cc1f918b">
+  
+      <h2>Recent Posts</h2>
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><li>
+                <a href="https://www.astro.oma.be/en/proba-3-top-experts-on-coronagraphy-meet-at-the-royal-observatory-of-belgium/" title="Proba-3: top experts on coronagraphy meet at the Royal Observatory of Belgium">Proba-3: top experts on coronagraphy meet at the Royal Observatory of Belgium</a>
+                			</li>
+					<li>
+                <a href="https://www.astro.oma.be/en/tiny-solar-bursts-show-pulses-like-big-flares/" title="Tiny Solar Bursts Show Pulses Like Big Flares">Tiny Solar Bursts Show Pulses Like Big Flares</a>
+                			</li>
+					<li>
+                <a href="https://www.astro.oma.be/en/soapbox-science-2025-female-scientists-take-the-floor-at-the-heart-of-brussels/" title="Soapbox Science 2025: female scientists take the floor at the heart of Brussels">Soapbox Science 2025: female scientists take the floor at the heart of Brussels</a>
+                			</li>
+				</div>
+      
+    </div>
+  </div>
+
+  </section>
+
+                <section class="row region region-footer-fourth">
+    <div id="block-contactus" class="block-content-basic block block-block-content block-block-content24914c13-29db-452f-ad32-881537efd968">
+  
+      <h2>Contact SIDC</h2>
+    
+      <div class="content">
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="container-fluid" data-bootstrap-contains="containers"><div class="container"><div class="row"><div class="col-12"><div class="row"><div class="col-12"><p><a style="color:white;" href="mailto:sidc-support@oma.be">sidc-support@oma.be</a></p><p style="color:#777;">Ringlaan 3<br>BE-1180 Brussels</p><div class="widget widget_text" id="text-2"><div class="textwidget"><br><a href="http://planetarium.be/" target="_blank" title="Planetarium"><img class="footer_icons" src="/sites/default/files/logo/planetarium_logo.jpg" alt="planetarium" width="30" height="25" loading="lazy"></a> <a href="http://iasb.be/" target="_blank" title="IASB"><img class="footer_icons" src="/sites/default/files/logo/iasb_logo.jpg" alt="iasb" width="30" height="25" loading="lazy"></a> <a href="http://www.meteo.be/" target="_blank" title="IRM-KMI-RMI"><img class="footer_icons" src="/sites/default/files/logo/irm_logo.jpg" alt width="30" height="25" loading="lazy"></a> <a href="http://www.stce.be/" target="_blank" title="STCE"><img class="footer_icons" src="/sites/default/files/logo/stce_logo.jpg" alt width="30" height="22" loading="lazy"></a> <a href="http://www.belspo.be/" target="_blank" title="Belspo"><img class="footer_icons" src="/sites/default/files/logo/belspo_logo.jpg" alt width="30" height="25" loading="lazy"></a> <a href="http://www.belgium.be/" target="_blank" title="Belgium.be"><img class="footer_icons" src="/sites/default/files/logo/be_logo.jpg" alt width="30" height="25" loading="lazy"></a></div></div></div></div></div></div></div></div></div>
+      
+    </div>
+  </div>
+
+  </section>
+
+            </div>
+                            </div>
+    </footer>
+  </div>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/836","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"collapsiblock":{"active_pages":true,"slide_speed":200,"cookie_lifetime":null,"switcher_enabled":null,"switcher_class":null},"superfish":{"superfish-main-navigation-silso":{"id":"superfish-main-navigation-silso","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast"},"plugins":{"smallscreen":{"cloneParent":0,"mode":"window_width","title":"Main navigation SILSO"},"supposition":true,"supersubs":true}},"superfish-main":{"id":"superfish-main","sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast"},"plugins":{"smallscreen":{"cloneParent":0,"mode":"window_width","title":"Main navigation"},"supposition":true,"supersubs":true}}},"csp":{"nonce":"mEC3zonubkq3A61a8uC8gQ"},"user":{"uid":0,"permissionsHash":"51cdea433ce6764407943934575ddf1c6477f8eb6118490264bec4df45c5ccc3"}}</script>
+<script src="/sites/default/files/js/js_3kRnu87qWkgbq13ZpR0lv-8_h46w6PyQSCkwJxK1_dM.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=sidc_barrio&amp;include=eJx1jFEKwkAMRC9U6ZGWJI3dYLpZklTx9lI_hJb17zFvZtAsIx16QXAXm_EIXpBUS3QgVsAJr6VVDUFvkW-Vtk5kqtBDUI0eM5nzFLLQ6fI7p6WdzOUn9s5-l6jzj0ZZqfZkl5bccuhjA9UgZ25jf1DsGP9st5AUax9JfHOA"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+<script src="/modules/contrib/collapsiblock/theme/dist/collapsiblock.js?syijk6" type="module"></script>
+<script src="//cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1.25.0/prism.js"></script>
+<script src="/sites/default/files/js/js_EmcohSS5TdHI5OUGKe7MZ319tasgTsmYvoKA2mUpsxY.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=sidc_barrio&amp;include=eJx1jFEKwkAMRC9U6ZGWJI3dYLpZklTx9lI_hJb17zFvZtAsIx16QXAXm_EIXpBUS3QgVsAJr6VVDUFvkW-Vtk5kqtBDUI0eM5nzFLLQ6fI7p6WdzOUn9s5-l6jzj0ZZqfZkl5bccuhjA9UgZ25jf1DsGP9st5AUax9JfHOA"></script>
+
+  </body>
+</html>
